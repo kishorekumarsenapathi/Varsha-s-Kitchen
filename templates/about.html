@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+{% extends 'navbar.html' %}
+{% block body_block %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    h1 {
+        text-align: center;
+    }
+    
+     h4 {
+         text-align: center;
+         padding: 30px;
+         margin: 10px 190px;
+        background: black;
+        color: white;
+        border-radius: 90px;
+     }
+     h4:hover {
+        background:  #0d6efd;
+     }
+#aboutop{
+    /* border: solid red; */
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background: linear-gradient(to right, #A74E33 0%, #B8854D 45%, #C09B5F 100%);
+    background: -webkit-linear-gradient(left, #A74E33 0%, #B8854D 45%, #C09B5F 100%);
+    background: -moz-linear-gradient(right, #A74E33 0%, #B8854D 45%, #C09B5F 100%);
+    background-color: #B8854D; 
+}
+#innerabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    flex-basis: 50%;
+}
+#imgabout{
+    /* border: solid blue; */
+    display: flex;
+    flex-basis: 50%;
+}
+
+#imgabout img:first-child{
+    height: 28vh;
+    width: 20vw;
+
+}
+#imgabout img:last-child{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-top: 10vh;
+    mix-blend-mode: multiply;
+}
+#aboutop h1{
+    /* border: solid; */
+    display: flex;
+    justify-content: start;
+}
+
+.connected{
+    font-size: 20px;
+    border: solid brown;
+    background: brown;
+    color: whitesmoke;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.aboutdata{
+    /* border: solid blue; */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+
+#footer{
+    background-color: yellow;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.aboutdata{
+    display: flex;
+    flex-direction: row;
+}
+.aboutdata a{
+    text-decoration: none;
+    color: black;
+}
+.aboutdata a:hover{
+    color: red;
+}
+.footercards{
+    height: 100%;
+    /* border: solid red ; */
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+    
+}
+.footercards img{
+    /* border:solid blue; */
+    height: 32vh;
+    width: 20vw;
+}
+.footercards:last-child{
+    /* border: solid green; */
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+}
+</style>
+
+<div id="aboutop">
+    <div id="innerabout">
+    <h1>About Us</h1>
+    <h2>Home / About us</h2>
+    </div>
+    <div id="imgabout">
+        <img src="../static/images/kitchenlogo1.png" alt="" height="1px" width="30vw" ><img src="../static/images/NameLogo.png" alt="" height="20vh" width="30vw">
+    </div>
+</div>
+<div>
+    <h1>Swagatham We are Varsha's Kitchen – A Taste of Tradition, A World of Flavor!</h1>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our journey, now spanning over four decades, has been guided by the true spirit of Indian home-cooked meals. From our signature pickles to masalas, snacks, powders, and pastes, every product we create is the best in taste. 
+        We are deeply committed to bringing you traditional South Indian tastes with a global appeal. Whether you're craving the fiery zest of our pickles or the aromatic depth of our masalas, we ensure that every product is crafted with passion, creativity, and the utmost care.<br><br>
+        <b>Our Philosophy</b><br>
+        At Varsha,s Kitchen, we believe in authenticity above all else. Our products are made with 100% natural ingredients and are preservative-free, ensuring that each bite is as pure and flavorful as it is healthy. We operate from a state-of-the-art, US FDA-approved facility near Hyderabad, adhering to stringent FSSAI and ISO 22000:2005 certifications, and following recommended safety protocols to guarantee the highest standards of hygiene and quality.<br><br>
+        <b>Global Reach</b><br>
+        Today, Varsha,s Kitchen is a trusted name, not just in India, but across the world. With a presence in 28+ countries including Canada, the USA, Australia, New Zealand, Singapore, UAE, Kuwait, and Hong Kong, we have made it our mission to bring the authentic taste of home to Indians everywhere. In India, we proudly serve the Southern states, preserving the regional flavors that define the heart of South Indian cuisine.<br><br>
+        <b>Our Promise</b><br>
+        With over two decades of experience, our passionate team continually strives to create premium, handcrafted products that bring the best of traditional South Indian cooking to your table. Every product is rigorously tested for quality and taste, ensuring that only the finest reaches you. We take pride in the trust we've built over the years and in our ability to offer you not just products, but a tasteful experience that connects you to the heart of South India.<br><br>
+        <b>Taste the Authentic Difference</b><br>
+        When you choose Varsha,s Kitchen, you’re choosing more than just food – you're choosing a slice of history, culture, and the genuine flavors of India. We are proud to be your partner in bringing the authentic home tastes of South India into kitchens around the world.<br><br>
+    </p>
+</div>
+
+<div class="connected">
+    <h2>Stay Connected! Follow Varsha's Kitchen</h2>
+        
+</div>
+
+
+<div class="aboutdata">
+    <div class="footercards">
+        <img src="../static/images/kitchenlogo1.png">
+        <small>
+            We follow the "Original Telugu Recipe" using traditional, generational methods to create authentic, handmade flavors reminiscent of your grandmother's cooking.
+        </small>
+        <span>
+            <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </span>
+        
+    </div>
+    <div class="footercards">
+        <h1>INFORMATION</h1>
+        <a href="">Terms & Conditions</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Shipping Policy</a>
+        <a href="">Refund Policy</a>
+        <a href="">Payment Services</a>
+    </div>
+    <div class="footercards">
+        <h1>MY ACCOUNT</h1>
+        <a href="/accounts/login">Login</a>
+        <a href="/signup">Register</a>
+    </div>
+    <div class="footercards">
+        <h3 style="color:  #0d6efd; margin-top: 0;">Quick Contact</h3>
+        <p style="padding:10px;" ><strong>📍 Location:</strong> Veeluparthi,Vizianagaram, Andhra Pradesh</p>
+        <p style="padding:10px;"><strong>📞 Phone:</strong> +91 98765 43210</p>
+        <p style="padding:10px;"><strong>✉️ Email:</strong> support@varshaskitchen.com</p>
+        <p style="padding:10px;"><strong>⏰ Hours:</strong> 10:00 AM - 12:00 AM (All Days)</p>
+    </div>
+</div>
+<div id="footer">
+    <b>Copyright © Varsha's Kitchen All Rights Reserved</b>
+</div>
+
+{% endblock %}

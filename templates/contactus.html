@@ -1,0 +1,144 @@
+{% extends 'navbar.html' %}
+{% block body_block %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+#aboutop{
+    /* border: solid red; */
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background: linear-gradient(to right, #A74E33 0%, #B8854D 45%, #C09B5F 100%);
+    background: -webkit-linear-gradient(left, #A74E33 0%, #B8854D 45%, #C09B5F 100%);
+    background: -moz-linear-gradient(right, #A74E33 0%, #B8854D 45%, #C09B5F 100%);
+    background-color: #B8854D; 
+}
+#innerabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    flex-basis: 50%;
+}
+#imgabout{
+    /* border: solid blue; */
+    display: flex;
+    flex-basis: 50%;
+}
+
+#imgabout img:first-child{
+    height: 28vh;
+    width: 20vw;
+
+}
+#imgabout img:last-child{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-top: 10vh;
+    mix-blend-mode: multiply;
+}
+#aboutop h1{
+    /* border: solid; */
+    display: flex;
+    justify-content: start;
+}
+
+
+    .contact-wrapper {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: Arial, sans-serif;
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 25px;
+    }
+    .contact-info {
+        background: #fdfdfd;
+        padding: 40px;
+        border-radius: 12px;
+        border: 1px solid #eee;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    .btn-submit {
+        background:  #0d6efd;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .connected{
+    font-size: 20px;
+    border: solid brown;
+    background: brown;
+    color: whitesmoke;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+}
+.connected span{
+    font-size: 30px;
+}
+
+</style>
+
+<div id="aboutop">
+    <div id="innerabout">
+    <h1>About Us</h1>
+    <h2>Home / Contact us</h2>
+    </div>
+    <div id="imgabout">
+        <img src="../static/images/kitchenlogo1.png" alt="" height="1px" width="30vw" ><img src="../static/images/NameLogo.png" alt="" height="20vh" width="30vw">
+    </div>
+</div>
+
+<div class="contact-wrapper">
+    <h2 style="color: #222; text-align: center;">Get in Touch With Varsha's Kitchen</h2><br>
+    <p style="text-align: center; color: #666;">Got questions, feedback, or cravings? Reach out and we'll reply right away.</p>
+
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h3 style="color:  #0d6efd; margin-top: 0;">Quick Contact</h3>
+            <p style="padding:10px;" ><strong>📍 Location:</strong> Veeluparthi,Vizianagaram, Andhra Pradesh</p>
+            <p style="padding:10px;"><strong>📞 Phone:</strong> +91 98765 43210</p>
+            <p style="padding:10px;"><strong>✉️ Email:</strong> support@varshaskitchen.com</p>
+            <p style="padding:10px;"><strong>⏰ Hours:</strong> 10:00 AM - 12:00 AM (All Days)</p>
+        </div>
+
+        <form class="contact-form" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+            <button type="submit"  onclick="return confirm('Your Message Successfully Sended');" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+</div>
+<div class="connected">
+    <h2>Stay Connected! Follow Varsha's Kitchen on</h2>
+        <span>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </span>
+</div>
+{% endblock %}
