@@ -14,6 +14,7 @@ body {
 
 /* Left side: Exact 50% image */
 img {
+    border: none;
     width: 50%;
     height: 100vh;
     object-fit: cover;

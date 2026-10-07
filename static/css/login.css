@@ -13,11 +13,12 @@ body {
 
 
 img {
+    border: none;
     height: 100vh;
     width: 50%;
     float: left;
-    object-fit: cover;
-    display: block;
+    /* object-fit: cover; */
+    /* display: block; */
 }
 
 /* Right side: Login container */
